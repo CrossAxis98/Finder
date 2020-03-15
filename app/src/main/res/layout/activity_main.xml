@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="232dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/finder"
+        />
+
+    <Button
+        android:id="@+id/buttonCopyText"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="COPY text from clipboard"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:ems="14"
+        />
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/buttonCopyText"
+            android:gravity="center">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonFindPhrase"
+                android:padding="10dp"
+                android:text="Find phrase"
+                android:ems="7"
+
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonReset"
+                android:padding="10dp"
+                android:text="Reset"
+                android:ems="7"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:text=""
+            android:textSize="20sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/separator"
+            android:layout_below="@id/textViewPhrase"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/separator"
+            android:inputType="text"
+            android:text="Insert text"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            />
+
+
+
+
+</RelativeLayout>
+</ScrollView>
